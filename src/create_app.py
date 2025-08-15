@@ -1,7 +1,7 @@
 # src/create_app.py
 from src.infrastructure.databases.db_base import engine, Base
 
-# Import TƯỜNG MINH các lớp để chắc chắn đăng ký vào Base.metadata
+# Import tất cả các lớp để chắc chắn đăng ký vào Base.metadata
 from src.infrastructure.models.identity_models import User, InternProfile
 from src.infrastructure.models.recruitment_models import RecruitmentCampaign, Application
 from src.infrastructure.models.training_models import TrainingProgram, Project
