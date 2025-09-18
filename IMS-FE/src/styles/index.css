@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card: theme('colors.white');
+  --card-dark: theme('colors.gray.900');
+}
+
+.card { @apply rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm; }
+.btn  { @apply inline-flex items-center gap-2 rounded-lg px-3 py-2 border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800; }
+.btn-primary { @apply bg-blue-600 text-white hover:bg-blue-700 border-blue-600; }
+.input { @apply w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-600; }
+.label { @apply block text-sm font-medium mb-1; }
+.badge { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium border border-gray-300 dark:border-gray-700; }
+.table { @apply w-full text-sm; }
+.table th { @apply text-left font-semibold border-b border-gray-200 dark:border-gray-800 py-2; }
+.table td { @apply border-b border-gray-100 dark:border-gray-800 py-2; }
+
+.toast { @apply fixed right-4 top-4 z-50 rounded-lg bg-black/80 text-white px-3 py-2; }
+.sidebar-link { @apply block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800; }
+.sidebar-active { @apply bg-gray-100 dark:bg-gray-800; }
+
+
+.btn { @apply inline-flex items-center justify-center rounded-xl border border-gray-300 dark:border-neutral-700 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-neutral-800 transition; }
+.btn-sm { @apply px-2 py-1 text-xs; }
+.input { @apply rounded-xl border border-gray-300 dark:border-neutral-700 px-3 py-2 bg-white dark:bg-neutral-900 outline-none w-full; }
+.card { @apply rounded-2xl border border-gray-200 dark:border-neutral-800 p-4 bg-white dark:bg-neutral-950; }
+.table th { @apply text-xs uppercase tracking-wide opacity-60; }
+.sidebar-link { @apply hover:bg-gray-100/70 dark:hover:bg-neutral-800/70 transition; }
